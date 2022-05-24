@@ -1,12 +1,16 @@
 {
   "name": "microservices-saas",
-  "version": "0.0.0",
+  "version": "0.0.0-semantic-release",
   "license": "MIT",
   "scripts": {
     "start": "nx serve",
     "build": "nx build",
+    "build:all": "nx run-many --target=build --all",
     "test": "nx test",
-    "prepare": "husky install"
+    "test:all": "nx run-many --target=test --all",
+    "lint-fix:all": "nx run-many --target=lint --fix=true --all",
+    "prepare": "husky install",
+    "semantic-release": "semantic-release"
   },
   "private": true,
   "dependencies": {
@@ -46,7 +50,8 @@
     "prettier": "2.5.1",
     "ts-jest": "27.1.4",
     "ts-node": "9.1.1",
-    "typescript": "~4.6.2"
+    "typescript": "~4.6.2",
+    "semantic-release": "^19.0.2"
   },
   "lint-staged": {
     "*.{css,less,scss,html,json,js,jsx,ts,tsx,md,html,graphql}": [
@@ -60,5 +65,9 @@
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
     }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wguerram/microservices-saas.git"
   }
 }

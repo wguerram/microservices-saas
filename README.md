@@ -1,10 +1,15 @@
-# Microservices SaaS
+<p><img src="./images/microservices-saas-logo.jpg" width="450"></p>
 
+[![semantic-release: angular](https://img.shields.io/badge/semantic--release-angular-e10079?logo=semantic-release)](https://github.com/semantic-release/semantic-release)
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
 
-This project was generated using [Nx](https://nx.dev).
+# Microservices SaaS
 
-<p style="text-align: center;"><img src="https://raw.githubusercontent.com/nrwl/nx/master/images/nx-logo.png" width="450"></p>
+Use this boilerplate to speed up your next SaaS deployment using NodeJS Microservices 🔥 🚀
+<br/>
+<br/>
+
+This project was generated using [Nx](https://nx.dev).
 
 🔎 **Smart, Fast and Extensible Build System**
 
@@ -88,3 +93,54 @@ Create a branch from main
 git commit will prompt for conventional commits
 
 rebase your branch before requesting a pull request.
+
+Because you'll be rebasing only one developer should work in a branch.
+
+Commands sequence:
+
+Putting aliases on the side of each command
+
+```
+# Create a branch
+git checkout main  # git co main
+git pull
+git checkout -b my-branch  # git nb my-branch
+
+# Make changes and do commits
+
+# First change
+git commit  # git c
+
+# Optional push your changes
+git push --set-upstream origin/my-branch
+
+#Second change
+git commit  # git c
+
+# Optional push your changes
+git push  # git p
+
+# When you're ready to merge do a rebase
+git fetch & git rebase origin/main # git rom
+
+# In case of conflicts, fix them and stage files modified
+git add filename
+
+git rebase --continue
+
+git commit  # git c
+
+# Push force latest changes, this will rewrite history in the remote. That's why no more than one developer should work on the same branch.
+git push --force origin my-branch
+
+# Create a pull request in github
+# my-branch will be deleted from remote automatically after merging into main.
+
+# Delete your local copy
+git branch -D my-branch  # git del my-branch
+
+# Update your local main branch
+git checkout main  # git co main
+git pull
+
+```
