@@ -98,49 +98,47 @@ Because you'll be rebasing only one developer should work in a branch.
 
 Commands sequence:
 
-Putting aliases on the side of each command
-
 ```
 # Create a branch
-git checkout main  # git co main
+git checkout main
 git pull
-git checkout -b my-branch  # git nb my-branch
+git checkout -b my-branch
 
 # Make changes and do commits
 
 # First change
-git commit  # git c
+git commit
 
 # Optional push your changes
-git push --set-upstream-to origin my-branch
+git push -u origin my-branch
 
 #Second change
-git commit  # git c
+git commit
 
 # Optional push your changes
-git push  # git p
+git push
 
 # When you're ready to merge do a rebase
-git fetch & git rebase origin/main # git rom
+git rebase origin/main
 
 # In case of conflicts, fix them and stage files modified
 git add filename
 
 git rebase --continue
 
-git commit  # git c
+git commit
 
 # Push force latest changes, this will rewrite history in the remote. That's why no more than one developer should work on the same branch.
 git push --force origin my-branch
 
-# Create a pull request in github
+# Create a pull request
 # my-branch will be deleted from remote automatically after merging into main.
 
+# Once your branch have been merged into main
 # Update your local main branch
 git checkout main  # git co main
 git pull
 
 # Delete your local copy
-git branch -D my-branch  # git del my-branch
-
+git branch -D my-branch
 ```
