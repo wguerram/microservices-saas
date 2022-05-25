@@ -129,7 +129,7 @@ git rebase --continue
 git commit
 
 # Push force latest changes, this will rewrite history in the remote. That's why no more than one developer should work on the same branch.
-git push --force origin my-branch
+git push --force -u origin my-branch
 
 # Create a pull request
 # my-branch will be deleted from remote automatically after merging into main.
