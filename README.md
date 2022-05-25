@@ -112,7 +112,7 @@ git checkout -b my-branch  # git nb my-branch
 git commit  # git c
 
 # Optional push your changes
-git push --set-upstream origin/my-branch
+git push --set-upstream-to origin my-branch
 
 #Second change
 git commit  # git c
@@ -136,11 +136,11 @@ git push --force origin my-branch
 # Create a pull request in github
 # my-branch will be deleted from remote automatically after merging into main.
 
-# Delete your local copy
-git branch -D my-branch  # git del my-branch
-
 # Update your local main branch
 git checkout main  # git co main
 git pull
+
+# Delete your local copy
+git branch -D my-branch  # git del my-branch
 
 ```
