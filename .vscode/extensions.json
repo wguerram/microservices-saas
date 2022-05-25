@@ -3,6 +3,17 @@
     "nrwl.angular-console",
     "esbenp.prettier-vscode",
     "firsttris.vscode-jest-runner",
-    "dbaeumer.vscode-eslint"
+    "dbaeumer.vscode-eslint",
+    "github.vscode-pull-request-github",
+    "ms-vscode-remote.remote-containers",
+    "ms-vscode-remote.remote-wsl",
+    "ms-azuretools.vscode-docker",
+    "aaron-bond.better-comments",
+    "alefragnani.bookmarks",
+    "christian-kohler.path-intellisense",
+    "davidanson.vscode-markdownlint",
+    "yzhang.markdown-all-in-one",
+    "dsznajder.es7-react-js-snippets",
+    "dracula-theme.theme-dracula"
   ]
 }
