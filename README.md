@@ -136,7 +136,7 @@ git push --force -u origin my-branch
 
 # Once your branch have been merged into main
 # Update your local main branch
-git checkout main  # git co main
+git checkout main
 git pull
 
 # Delete your local copy
